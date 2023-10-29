@@ -1,0 +1,81 @@
+/* Import CSS */
+@import "./styles/fonts.css";
+
+#root {
+  /* Colors */
+  --clr-main-black: #010101;
+  --clr-secondary-black: #0D1117;
+  --clr-main-gray: #8B949E;
+  --clr-main-white: #FFFFFF;
+
+  --clr-cyan: #0E14C8;
+  --clr-blue: #2265de;
+  --clr-light-blue: #3F78B3;
+  --clr-green: #17C751;
+  --clr-pale-green: #0BC786;
+  --clr-orange: #CB472B;
+  --clr-purple: #653EAD;
+  --clr-pink: #de75bd;
+  --clr-bright-pink: #ff507a;
+  --clr-teal: #0B8188;
+  --clr-mustard: #E3B341;
+
+  /* Gradients */
+  --green-to-blue: linear-gradient(var(--clr-green),var(--clr-light-blue), var(--clr-cyan));
+  --orange-to-pink: linear-gradient(var(--clr-orange), var(--clr-purple), var(--clr-pink));
+  --teal-to-purple: linear-gradient( var(--clr-teal), var(--clr-cyan), var(--clr-purple));
+  --multicolor: linear-gradient(166deg, var(--clr-bright-pink) 0%, var(var(--clr-purple)) 33%, var(--clr-blue) 66%, var(--clr-pale-green) 100%);
+
+  /* Fonts */
+  --ff-main: 'Mona Sans';
+  --ff-title: 'Neue Helvetica W04 99 Cm Black';
+  --ff-mono: monospace;
+
+  --fw-100: 100;
+  --fw-200: 200;
+  --fw-300: 300;
+  --fw-400: 400;
+  --fw-500: 500;
+  --fw-600: 600;
+  --fw-700: 700;
+  --fw-800: 800;
+  --fw-900: 900;
+
+  --fs-normal: normal;
+  --fs-italic: italic;
+
+  --fs-208: 13rem;
+  --fs-192: 12rem;
+  --fs-176: 11rem;
+  --fs-160: 10rem;
+  --fs-144: 9rem;
+  --fs-128: 8rem;
+  --fs-112: 7rem;
+  --fs-96: 6rem;
+  --fs-80: 5rem;
+  --fs-64: 4rem;
+  --fs-48: 3rem;
+  --fs-44: 2.75rem;
+  --fs-40: 2.5rem;
+  --fs-36: 2.25rem;
+  --fs-32: 2rem;
+  --fs-28: 1.75rem;
+  --fs-24: 1.5rem;
+  --fs-20: 1.25rem;
+  --fs-16: 1rem;
+  --fs-12: 0.75rem;
+  --fs-8: 0.5rem;
+  --fs-4: 0.25rem;
+}
+
+#root {
+	min-height: max-content !important;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
+	-moz-box-sizing: border-box; /* Firefox, other Gecko */
+	box-sizing: border-box; /* Opera/IE 8+ */
+}
