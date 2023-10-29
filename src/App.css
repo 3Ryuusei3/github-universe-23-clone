@@ -1,7 +1,7 @@
 /* Import CSS */
 @import "./styles/fonts.css";
 
-#root {
+:root {
   /* Colors */
   --clr-main-black: #010101;
   --clr-secondary-black: #0D1117;
@@ -44,32 +44,20 @@
   --fs-normal: normal;
   --fs-italic: italic;
 
-  --fs-208: 13rem;
-  --fs-192: 12rem;
-  --fs-176: 11rem;
-  --fs-160: 10rem;
-  --fs-144: 9rem;
-  --fs-128: 8rem;
-  --fs-112: 7rem;
-  --fs-96: 6rem;
-  --fs-80: 5rem;
-  --fs-64: 4rem;
-  --fs-48: 3rem;
-  --fs-44: 2.75rem;
-  --fs-40: 2.5rem;
-  --fs-36: 2.25rem;
-  --fs-32: 2rem;
-  --fs-28: 1.75rem;
-  --fs-24: 1.5rem;
-  --fs-20: 1.25rem;
-  --fs-16: 1rem;
-  --fs-12: 0.75rem;
-  --fs-8: 0.5rem;
-  --fs-4: 0.25rem;
-}
-
-#root {
-	min-height: max-content !important;
+  --fs-icon: calc(76px + (90 - 76) * ((100vw - 400px) / (1600 - 400)));
+	--fs-timer: calc(16px + (36 - 16) * ((100vw - 600px) / (1600 - 600)));
+	--fs-xxxxl: calc(52px + (68 - 52) * ((100vw - 400px) / (1600 - 400)));
+	--fs-xxxl: calc(34px + (50 - 34) * ((100vw - 400px) / (1600 - 400)));
+	--fs-xxl: calc(26px + (38 - 26) * ((100vw - 400px) / (1600 - 400)));
+	--fs-xl: calc(20px + (30 - 20) * ((100vw - 400px) / (1600 - 400)));
+	--fs-lg: calc(18px + (24 - 18) * ((100vw - 400px) / (1600 - 400)));
+	--fs-md: calc(16px + (20 - 16) * ((100vw - 400px) / (1600 - 400)));
+	--fs-st: calc(15px + (18 - 15) * ((100vw - 400px) / (1600 - 400)));
+	--fs-sm: calc(14px + (16 - 14) * ((100vw - 400px) / (1600 - 400)));
+	--fs-xs: calc(12px + (14 - 12) * ((100vw - 400px) / (1600 - 400)));
+	--fs-xxs: calc(10px + (12 - 10) * ((100vw - 400px) / (1600 - 400)));
+	--fs-xxxs: calc(9px + (10.5 - 9) * ((100vw - 400px) / (1600 - 400)));
+	--fs-xxxxs: calc(7px + (8 - 7) * ((100vw - 400px) / (1600 - 400)));
 }
 
 * {
@@ -78,4 +66,12 @@
 	-webkit-box-sizing: border-box; /* Safari/Chrome, other WebKit */
 	-moz-box-sizing: border-box; /* Firefox, other Gecko */
 	box-sizing: border-box; /* Opera/IE 8+ */
+}
+
+body {
+  font-family: var(--ff-main);
+  font-size: var(--fs-md);
+  color: var(--clr-main-white);
+  background-color: var(--clr-main-black);
+  min-height: 100vh;
 }
