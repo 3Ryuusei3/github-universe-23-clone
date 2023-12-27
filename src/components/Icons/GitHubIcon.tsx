@@ -1,8 +1,8 @@
 
 const GitHubIcon = (/* props */) => (
   <svg
-    width={24}
-    height={24}
+    width={32}
+    height={32}
     fill="currentColor"
     viewBox="0 0 16 16"
     /* {...props} */

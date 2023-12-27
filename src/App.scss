@@ -1,12 +1,18 @@
 /* Import CSS */
 @import "./styles/fonts.css";
+@import "./styles/navbar.scss";
+@import "./styles/hero.scss";
 
 :root {
   /* Colors */
   --clr-main-black: #010101;
-  --clr-secondary-black: #0D1117;
-  --clr-main-gray: #8B949E;
+  --clr-secondary-black: #0b0d11;
   --clr-main-white: #FFFFFF;
+
+  --clr-main-dark-gray: #30363d;
+  --clr-main-dark-gray-alfa: #8a939e33;
+  --clr-main-gray: #8B949E;
+  --clr-secondary-gray: #C9D1D9;
 
   --clr-cyan: #0E14C8;
   --clr-blue: #2265de;
@@ -19,6 +25,12 @@
   --clr-bright-pink: #ff507a;
   --clr-teal: #0B8188;
   --clr-mustard: #E3B341;
+
+  /* Backdrops */
+  --clr-backdrop-header: #0d111780;
+  --clr-backdrop-button: #00000040;
+  --clr-backdrop-button-dark: #0000007a;
+  --backdrop-filter-header: 16px;
 
   /* Gradients */
   --green-to-blue: linear-gradient(var(--clr-green),var(--clr-light-blue), var(--clr-cyan));
@@ -74,4 +86,38 @@ body {
   color: var(--clr-main-white);
   background-color: var(--clr-main-black);
   min-height: 100vh;
+}
+
+img {
+  width: 100%;
+}
+
+/* Utilitary classes */
+
+.container {
+  max-width: 1250px;
+  max-width: 92%;
+  margin: 0 auto;
+}
+
+.btn {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+  font-size: var(--fs-sm);
+  font-weight: var(--fw-500);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  padding: 0.75rem 1.5rem;
+
+  &.btn-outline {
+    border: 1px solid var(--clr-main-dark-gray);
+    color: var(--clr-main-white);
+
+    &:hover {
+      border: 1px solid var(--clr-main-white);
+      background-color: var(--clr-main-dark-gray-alfa);
+    }
+  }
 }
