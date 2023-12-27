@@ -4,6 +4,7 @@ header {
   width: 100%;
   background-color: var(--clr-backdrop-header);
   backdrop-filter: blur(var(--backdrop-filter-header));
+  z-index: 1000;
 
   & > div {
     display: flex;
