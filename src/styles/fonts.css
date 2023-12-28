@@ -142,6 +142,16 @@
     font-display: swap;
 }
 
+/* METRICS FONT */
+@font-face {
+    font-family: 'Hubot Sans';
+    src: local('Hubot Sans SemiBold'), local('HubotSans-SemiBold'),
+      url('./../fonts/HubotSans-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+  }
+
 /* TITLE FONT */
 @font-face {
     font-family: "Neue Helvetica W04 99 Cm Black";

@@ -1,0 +1,20 @@
+[
+  {
+    "title": "Opening keynote",
+    "description": "It’s a new age for GitHub. Join our CEO Thomas Dohmke and special guests for a stirring, high velocity keynote as we fundamentally redefine what it means to be a software development platform in the age of AI.",
+    "link": "/",
+    "image": "https://res.cloudinary.com/dhws4e2ty/image/upload/v1703794127/xy4dpnzp1is6uitxomii.jpg"
+  },
+  {
+    "title": "GitHub Copilot: the AI pair programmer for today and tomorrow",
+    "description": "While a lot of the talk around AI in 2023 has been about possibilities, the world’s adoption of GitHub Copilot has become a reality. Millions of developers and tens of thousands of organizations have chosen the AI developer tool to increase productivity. The reason? We think it boils down to impact. Join VPs of Product Management, Ryan J. Salva and Shuyin Zhao, and a variety of guest speakers, as they discuss the seismic shift in software development caused by GitHub Copilot, along with the latest developments in AI-assisted programming that will elevate the developer experience for years to come.",
+    "link": "/",
+    "image": "https://res.cloudinary.com/dhws4e2ty/image/upload/v1703794127/cdho3cwbywbah4i6or52.jpg"
+  },
+  {
+    "title": "Coding with an AI pair programmer: Getting started with GitHub Copilot",
+    "description": "The explosion of programming languages and frameworks has ironically made development more difficult. Developers need to remember different syntax across different environments, and are finding that a large percentage of code they write is tedious. Acting as an AI pair programmer, GitHub Copilot can help a developer offload those tasks and instead focus on the bigger picture. Let’s explore how to get started with GitHub Copilot, its capabilities, and how to make the most out of the tool.",
+    "link": "/",
+    "image": "https://res.cloudinary.com/dhws4e2ty/image/upload/v1703794127/vitg1gtnznkmmirtysmy.jpg"
+  }
+]

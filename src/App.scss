@@ -2,11 +2,13 @@
 @import "./styles/fonts.css";
 @import "./styles/navbar.scss";
 @import "./styles/hero.scss";
+@import "./styles/highlights.scss";
+@import "./styles/comingup.scss";
 
 :root {
   /* Colors */
   --clr-main-black: #010101;
-  --clr-secondary-black: #0b0d11;
+  --clr-secondary-black: #0d1117;
   --clr-main-white: #FFFFFF;
 
   --clr-main-dark-gray: #30363d;
@@ -16,7 +18,7 @@
 
   --clr-cyan: #0E14C8;
   --clr-blue: #2265de;
-  --clr-light-blue: #3F78B3;
+  --clr-light-blue: #79c0ff;
   --clr-green: #17C751;
   --clr-pale-green: #0BC786;
   --clr-orange: #CB472B;
@@ -41,6 +43,7 @@
   /* Fonts */
   --ff-main: 'Mona Sans';
   --ff-title: 'Neue Helvetica W04 99 Cm Black';
+  --ff-metrics: 'Hubot Sans';
   --ff-mono: monospace;
 
   --fw-100: 100;
@@ -59,8 +62,8 @@
   --fs-icon: calc(76px + (90 - 76) * ((100vw - 400px) / (1600 - 400)));
 	--fs-timer: calc(16px + (36 - 16) * ((100vw - 600px) / (1600 - 600)));
 	--fs-xxxxxl: calc(72px + (88 - 72) * ((100vw - 400px) / (1600 - 400)));
-	--fs-xxxxl: calc(52px + (68 - 52) * ((100vw - 400px) / (1600 - 400)));
-	--fs-xxxl: calc(34px + (50 - 34) * ((100vw - 400px) / (1600 - 400)));
+	--fs-xxxxl: calc(40px + (56 - 40) * ((100vw - 400px) / (1600 - 400)));
+	--fs-xxxl: calc(34px + (46 - 34) * ((100vw - 400px) / (1600 - 400)));
 	--fs-xxl: calc(26px + (38 - 26) * ((100vw - 400px) / (1600 - 400)));
 	--fs-xl: calc(20px + (30 - 20) * ((100vw - 400px) / (1600 - 400)));
 	--fs-lg: calc(18px + (24 - 18) * ((100vw - 400px) / (1600 - 400)));
@@ -89,6 +92,22 @@ body {
   min-height: 100vh;
 }
 
+h1 {
+  font-size: var(--fs-xxxxl);
+  font-weight: var(--fw-600);
+}
+
+h2 {
+  font-size: var(--fs-xxxl);
+  font-weight: var(--fw-600);
+}
+
+h3 {
+  font-size: var(--fs-xxl);
+  font-weight: var(--fw-600);
+  line-height: 1.1;
+}
+
 img {
   width: 100%;
 }
@@ -106,7 +125,7 @@ img {
   padding: 0.5rem 1rem;
   border-radius: 0.5rem;
   font-size: var(--fs-sm);
-  font-weight: var(--fw-500);
+  font-weight: var(--fw-600);
   cursor: pointer;
   transition: all 0.3s ease;
   text-decoration: none;
@@ -120,5 +139,125 @@ img {
       border: 1px solid var(--clr-main-white);
       background-color: var(--clr-main-dark-gray-alfa);
     }
+  }
+
+  &.btn-white {
+    background-color: var(--clr-main-white);
+    color: var(--clr-main-black);
+  }
+}
+
+.field-input {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+
+  label {
+    font-weight: var(--fw-700);
+    font-size: var(--fs-xs);
+  }
+
+  input {
+    padding: 1rem;
+    border-radius: 0.5rem;
+    border: 1px solid var(--clr-secondary-gray);
+    background-color: var(--clr-secondary-black);
+    color: var(--clr-main-white);
+    font-size: var(--fs-sm);
+    font-weight: var(--fw-500);
+    transition: all 0.3s ease;
+
+    &:focus {
+      border: 1px solid var(--clr-main-white);
+    }
+  }
+}
+
+.checkbox-input {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.5rem;
+  position: relative;
+
+  input[type="checkbox"] {
+    margin-top: 2px;
+    appearance: none;
+    min-width: 20px;
+    min-height: 20px;
+    background: var(--clr-main-black);
+    border: 2px solid var(--clr-main-gray);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+
+    &:checked {
+      background: var(--clr-main-white);
+      &::after {
+        content: "";
+        background: url("./imgs/check.png");
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: block;
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+      }
+    }
+    &:focus {
+      border: 2px solid var(--clr-light-blue);
+    }
+  }
+
+  label {
+    color: var(--clr-main-gray);
+    font-size: var(--fs-sm);
+    line-height: 1.6;
+
+    a {
+      color: var(--clr-light-blue);
+    }
+  }
+}
+
+.arrow-btn {
+  position: relative;
+
+  &::before {
+    content: "";
+    color: var(--clr-main-white);
+    border: solid;
+    border-width: 0 2px 2px 0;
+    padding: 3px;
+    position: absolute;
+    right: -1.2rem;
+    top: 51%;
+    transform: translateY(-50%) rotate(-45deg);
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover::before {
+    right: -1rem;
+  }
+
+  &::after {
+    content: "";
+    background-color: var(--clr-main-white);
+    width: 8px;
+    height: 2px;
+    position: absolute;
+    right: -1.1rem;
+    top: 51%;
+    transform: translateY(-50%);
+    opacity: 1;
+    transition: all 0.2s ease-in-out;
+  }
+
+  &:hover::after {
+    right: -1rem;
+    opacity: 0;
   }
 }
