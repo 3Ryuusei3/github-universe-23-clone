@@ -69,7 +69,7 @@
 
     .hero__title--word {
       span {
-        font-size: 21.5vw;
+        font-size: clamp(1rem, 21.5vw, 295px);
         font-family: var(--ff-title);
         text-transform: uppercase;
         color: var(--clr-main-white);
@@ -81,7 +81,7 @@
       overflow-y: hidden;
 
       span {
-        font-size: 21.5vw;
+        font-size: clamp(1rem, 21.5vw, 295px);
         text-transform: uppercase;
         color: var(--clr-purple);
         font-weight: var(--fw-500);
@@ -105,7 +105,7 @@
         visibility: hidden;
 
         > * {
-          margin-block: -5vw;
+          margin-block: clamp(-4rem, -5vw, -1rem);
           margin-left: -1vw;
         }
       }
