@@ -12,7 +12,7 @@ export function ComingUpCard() {
     const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
     if (!email || !emailRegex.test(email)) {
-      setToastMessage('Please enter a valid email address', 'error');
+      setToastMessage('Please enter a valid email address.', 'error');
     } else {
       if (checked) {
         setToastMessage('Subscription successful and information updated!', 'success');

@@ -5,6 +5,7 @@ import { Header } from './components/Header/Header'
 import { Hero } from './components/Hero/Hero';
 import { Highlights } from './components/Highlights/Highlights';
 import { ComingUp } from './components/ComingUp/ComingUp';
+import { Footer } from './components/Footer/Footer';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
         <Hero />
         <Highlights />
         <ComingUp />
+        <Footer />
       </Router>
     </ToastProvider>
   )

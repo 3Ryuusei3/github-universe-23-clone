@@ -5,6 +5,7 @@
 @import "./styles/highlights.scss";
 @import "./styles/comingup.scss";
 @import "./styles/toast.scss";
+@import "./styles/footer.scss";
 
 :root {
   /* Colors */
@@ -107,6 +108,10 @@ h3 {
   font-size: var(--fs-xxl);
   font-weight: var(--fw-600);
   line-height: 1.1;
+}
+
+ul {
+  list-style: none;
 }
 
 img {
