@@ -4,6 +4,7 @@
 @import "./styles/hero.scss";
 @import "./styles/highlights.scss";
 @import "./styles/comingup.scss";
+@import "./styles/toast.scss";
 
 :root {
   /* Colors */
@@ -116,7 +117,7 @@ img {
 
 .container {
   max-width: 1250px;
-  max-width: 92%;
+  width: 92%;
   margin: 0 auto;
 }
 
@@ -130,6 +131,7 @@ img {
   transition: all 0.3s ease;
   text-decoration: none;
   padding: 0.75rem 1.5rem;
+  border: none;
 
   &.btn-outline {
     border: 1px solid var(--clr-main-dark-gray);
