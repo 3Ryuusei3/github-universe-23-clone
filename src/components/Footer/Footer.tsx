@@ -5,16 +5,16 @@ export function Footer() {
     <footer className="footer">
       <div className="footer__top">
         <div className="container">
-          <img className="footer__logo--main" src="/sns/github.png" alt="github" />
+          <img className="footer__logo--main" src="/sns/github.png" alt="Github" />
           <ul>
-            <li><a href="https://twitter.com/github"><img src="/sns/x.svg" /></a></li>
-            <li><a href="https://github.com/"><img src="/sns/github-mark.svg" /></a></li>
-            <li><a href="https://www.linkedin.com/company/github"><img src="/sns/linkedin.svg" /></a></li>
-            <li><a href="https://www.youtube.com/github"><img src="/sns/youtube.svg" /></a></li>
-            <li><a href="https://www.facebook.com/GitHub"><img src="/sns/facebook.svg" /></a></li>
-            <li><a href="https://www.twitch.tv/github"><img src="/sns/twitch.svg" /></a></li>
-            <li><a href="https://www.tiktok.com/@github"><img src="/sns/tiktok.svg" /></a></li>
-            <li><a href="https://www.instagram.com/github"><img src="/sns/instagram.svg" /></a></li>
+            <li><a href="https://twitter.com/github"><img src="/sns/x.svg" alt="Twitter" /></a></li>
+            <li><a href="https://github.com/"><img src="/sns/github-mark.svg" alt="GitHub" /></a></li>
+            <li><a href="https://www.linkedin.com/company/github"><img src="/sns/linkedin.svg" alt="LinkedIn" /></a></li>
+            <li><a href="https://www.youtube.com/github"><img src="/sns/youtube.svg" alt="YouTube" /></a></li>
+            <li><a href="https://www.facebook.com/GitHub"><img src="/sns/facebook.svg" alt="Facebook" /></a></li>
+            <li><a href="https://www.twitch.tv/github"><img src="/sns/twitch.svg" alt="Twitch" /></a></li>
+            <li><a href="https://www.tiktok.com/@github"><img src="/sns/tiktok.svg" alt="TikTok" /></a></li>
+            <li><a href="https://www.instagram.com/github"><img src="/sns/instagram.svg" alt="Instagram" /></a></li>
           </ul>
         </div>
       </div>

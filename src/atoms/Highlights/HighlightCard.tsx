@@ -21,7 +21,9 @@ export const HighlightCard = ({ data }: HighlightCardProps) => {
 
   return (
     <div className="highlight__card">
-      <img src={data.image} alt={data.title} />
+      <div className="highlight__card--img">
+        <img src={data.image} alt="Preview of the session" />
+      </div>
       <div className="highlight__card--body">
         <h2>{data.title}</h2>
         <p>{truncateDescription(data.description, 40)}</p>
